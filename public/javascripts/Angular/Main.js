@@ -4,7 +4,7 @@
 var name = "";
 var policyLinksApp = angular.module("policyLinksApp",["ngRoute"]);
 
-policyLinksApp.controller("LinkController",["$scope","$http","$location", function($scope, $http, $location){
+policyLinksApp.controller("LinkController",["$scope","$http","$location", "$q", function($scope, $http, $location, $q){
 
     $scope.states = [];
     $scope.region = "";
